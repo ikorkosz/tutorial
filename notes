@@ -1,3 +1,9 @@
-Chyba załapałem...
-docker pull ikorkosz/alpine_curl:Curl_oc-chelm.pl_do_pliku
-docker run -it --name alpine_curl image_ID 
+docker pull ikorkosz/alpine_curl:non_root_infinity
+docker run -t -d --name non_root Image_ID
+
+odpala mi kontener, 
+tworzy użytkownika, 
+wypisuje wynik do pliku, 
+nie wyłącza się kontener - ale nie wiem po co robić ten ENTRYPOINT i dlaczego nic nie można zrobić jak się połączysz do kontenera
+
+
