@@ -12,7 +12,7 @@ RUN addgroup -g 1000 alpiny \
 USER alpinek
 
 WORKDIR /my_app
-
+ADD VERSION /.
 
 CMD  curl -Is $URL | head -1 -> wynik.txt
 
