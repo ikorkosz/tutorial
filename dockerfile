@@ -1,5 +1,5 @@
 ARG VERSION=3.4
-ARG URL=http://oc-chelm.pl
+ARG URL='http://oc-chelm.pl'
 FROM alpine:$VERSION
 
 RUN apk add --update \
@@ -16,5 +16,4 @@ ADD VERSION /.
 
 CMD  curl -Is $URL | head -1 -> wynik.txt
 
-ENTRYPOINT ["whoami"]
-CMD ["-f", "/dev/null"]
+#ENTRYPOINT ["sh", "-c", "tail -f /dev/null"]
